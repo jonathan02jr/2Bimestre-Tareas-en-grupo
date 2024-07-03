@@ -19,3 +19,5 @@ public class Retiro {
     private JPanel RETIRO1;
     private JPanel RETIRO2;
 }
+
+
