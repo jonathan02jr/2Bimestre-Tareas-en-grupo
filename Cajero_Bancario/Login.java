@@ -38,12 +38,15 @@ public class Login extends JFrame{
                 else {
 
                     JOptionPane.showMessageDialog(null,"INTENTA OTRA VEZ","USUARIO INCORRECTO", JOptionPane.ERROR_MESSAGE);
+                    contrasenia_Login.setText("");
                 }
+
             }
         });
         a1Button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+
                 contrasenia_Login.setText(contrasenia_Login.getText() + "1");
             }
         });

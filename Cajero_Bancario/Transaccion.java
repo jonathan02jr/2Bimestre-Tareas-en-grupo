@@ -28,14 +28,18 @@ public class Transaccion extends JFrame{
         RETIRORadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+            Retiro retirar = new Retiro();
+            retirar.iniciar();
+            dispose();
             }
         });
 
         DEPOSITORadioButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+            Deposito depositar = new Deposito();
+            depositar.iniciar();
+            dispose();
             }
         });
 
@@ -43,7 +47,9 @@ public class Transaccion extends JFrame{
         SALIRButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+            Login salida = new Login();
+            salida.iniciar();
+            dispose();
             }
         });
     }
