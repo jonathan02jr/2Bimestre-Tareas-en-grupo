@@ -109,7 +109,7 @@ public class Login extends JFrame{
     public void iniciar(){
         setVisible(true);
         setLocationRelativeTo(null);
-        setSize(300,300);
+        setSize(600,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }

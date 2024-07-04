@@ -57,7 +57,7 @@ public class Transaccion extends JFrame{
     public void iniciar(){
         setVisible(true);
         setLocationRelativeTo(null);
-        setSize(400,500);
+        setSize(600,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 }

@@ -49,7 +49,7 @@ public class Saldo extends JFrame {
             if (cantidad <= saldo) {
                 saldo -= cantidad;
             } else {
-                System.out.println("Saldo insuficiente.");
+                JOptionPane.showMessageDialog(null,"SALDO INSUFICIENTE","FONDOS INSUFICIENTES", JOptionPane.ERROR_MESSAGE);
             }
         }
     }
