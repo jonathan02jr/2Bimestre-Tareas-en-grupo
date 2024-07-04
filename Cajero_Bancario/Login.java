@@ -1,4 +1,4 @@
-package B3_RESPALDO.Cajero_Bancario.Cajero_Bancario;
+package Cajero_Bancario;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;
@@ -31,7 +31,9 @@ public class Login extends JFrame{
                 String contraIngresada = contrasenia_Login.getText();
 
                 if (contraIngresada.equals(password)){
-
+                    Transaccion ventana_transaccion = new Transaccion();
+                    ventana_transaccion.iniciar();
+                    dispose();
                 }
                 else {
 

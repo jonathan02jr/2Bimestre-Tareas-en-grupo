@@ -19,3 +19,5 @@ public class Deposito {
     private JButton ENTERButton;
     private JButton MENUButton;
 }
+
+
