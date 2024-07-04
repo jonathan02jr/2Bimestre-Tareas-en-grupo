@@ -7,10 +7,13 @@ import java.awt.event.ActionListener;
 public class Saldo extends JFrame {
     private JButton MENUButton;
     private JPanel JPanel_Saldo;
+    private JLabel Saldo_Actual;
 
     public Saldo (){
         super("SALDO");
         setContentPane(JPanel_Saldo);
+
+        Saldo_Actual.setText("Saldo actual: " + String.valueOf(Cuenta.getSaldo()));
 
         MENUButton.addActionListener(new ActionListener() {
             @Override
@@ -23,14 +26,32 @@ public class Saldo extends JFrame {
             }
         });
     }
-    public void mostrar_saldo(){
 
-
-    }
     public void iniciar(){
         setVisible(true);
         setLocationRelativeTo(null);
         setSize(400,500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    }
+
+    public static class Cuenta {
+        private static double saldo = 100;
+
+        public static double getSaldo() {
+            return saldo;
+        }
+
+        public static void depositar(double cantidad) {
+            saldo += cantidad;
+        }
+
+        public static void retirar(double cantidad) {
+            if (cantidad <= saldo) {
+                saldo -= cantidad;
+            } else {
+                // Manejar el caso donde no hay suficiente saldo
+                System.out.println("Saldo insuficiente.");
+            }
+        }
     }
 }
