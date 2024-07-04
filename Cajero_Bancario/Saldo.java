@@ -6,7 +6,6 @@ import java.awt.event.ActionListener;
 
 public class Saldo extends JFrame {
     private JButton MENUButton;
-    private JTextField textField1;
     private JPanel JPanel_Saldo;
 
     public Saldo (){
@@ -20,10 +19,14 @@ public class Saldo extends JFrame {
                 ventana_transaccion.iniciar();
                 dispose();
 
+
             }
         });
     }
+    public void mostrar_saldo(){
 
+
+    }
     public void iniciar(){
         setVisible(true);
         setLocationRelativeTo(null);
