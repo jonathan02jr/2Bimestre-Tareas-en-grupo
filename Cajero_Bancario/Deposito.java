@@ -37,7 +37,8 @@ public class Deposito extends JFrame{
         });
         a1Button.addActionListener(new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent e) {
+            public void actionPerformed(ActionEvent e)
+            {
                 deposito_valor.setText(deposito_valor.getText()+"1");
             }
         });
